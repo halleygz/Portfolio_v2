@@ -30,7 +30,13 @@ export class Circle {
     ctx.closePath();
   }
 
-  update(canvasWidth: number, canvasHeight: number) {
+  update(
+    canvasWidth: number,
+    canvasHeight: number,
+    mouseX: number | null,
+    mouseY: number | null,
+    repulsionRadius: number
+  ) {
     this.x += this.velX;
     this.y += this.velY;
 
@@ -48,6 +54,25 @@ export class Circle {
         this.radius,
         Math.min(this.y, canvasHeight - this.radius)
       );
+    }
+
+    if (mouseX !== null && mouseY !== null) {
+      const dx = this.x - mouseX;
+      const dy = this.y - mouseY;
+      const distance = Math.sqrt(dx * dx + dy * dy);
+
+
+      if(distance < repulsionRadius && distance > 0) {
+        const force = (repulsionRadius - distance) / repulsionRadius;
+        const unitX = dx / distance;
+        const unitY = dy / distance;
+        this.x += unitX * force * 10;
+        this.y += unitY * force * 10;
+
+      }
+
+
+
     }
   }
 }

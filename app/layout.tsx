@@ -70,8 +70,8 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className="relative">
-        <ParticlesAnim/>
+      <body className="">
+        <ParticlesAnim />
         <main
           className={`${geistMono.variable} antialiased border-gray-500 border-2 h-screen m-8 p-4`}
         >
