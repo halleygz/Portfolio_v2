@@ -23,7 +23,7 @@ export function drawLinesBtwnParticles(
         ctx.beginPath();
         ctx.moveTo(a.x, a.y);
         ctx.lineTo(b.x, b.y);
-        ctx.strokeStyle = `rgba(58, 58, 59, ${opacity})`;
+        ctx.strokeStyle = `rgba(91, 91, 92, ${opacity})`;
         ctx.lineWidth = 1;
         ctx.stroke();
       }
