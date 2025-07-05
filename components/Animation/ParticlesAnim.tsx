@@ -2,7 +2,7 @@
 
 import { drawLinesBtwnParticles } from "@/utils/animation/drawLines";
 import { Circle } from "@/utils/animation/particles";
-import { useEffect, useRef, useState } from "react";
+import { useEffect, useRef } from "react";
 
 function ParticlesAnim() {
   const canvasRef = useRef<HTMLCanvasElement>(null);
@@ -15,9 +15,9 @@ function ParticlesAnim() {
 
   // Constants for tuning
   const REPULSION_RADIUS = 150;
-  const REPULSION_STRENGTH = 10;
-  const MAX_LINE_DISTANCE = 220;
-  const NUM_PARTICLES = 65;
+  // const REPULSION_STRENGTH = 10;
+  // const MAX_LINE_DISTANCE = 220;
+  const NUM_PARTICLES = 15;
 
   // Particles storage ref
   const particlesRef = useRef<Circle[]>([]);
@@ -74,10 +74,10 @@ function ParticlesAnim() {
         new Circle(
           Math.random() * canvas.width,
           Math.random() * canvas.height,
-          Math.random() * 3.5 + 2,
-          "#3a3a3b",
-          (Math.random() - 0.5) * 5,
-          (Math.random() - 0.5) * 5
+          Math.random() * 1 + 2,
+          "#5b5b5c",
+          (Math.random() - 0.5) * 5.5,
+          (Math.random() - 0.5) * 5.5
         )
       );
     }
@@ -113,7 +113,7 @@ function ParticlesAnim() {
   return (
     <canvas
       ref={canvasRef}
-      className="absolute inset-0 pointer-events-none top-0 left-0 z-[-10] overflow-hidden"
+      className="absolute inset-0 pointer-events-none top-0 left-0 z-[-10] overflow-hidden max-w-full max-h-full"
     />
   );
 }
