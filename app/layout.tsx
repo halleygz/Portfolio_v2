@@ -3,6 +3,8 @@ import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 import Footer from "@/components/Shared/Footer";
 import ParticlesAnim from "@/components/Animation/ParticlesAnim";
+import Nav from "@/components/Shared/Nav";
+import Typewriter from "@/components/Animation/Typewriter";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -70,14 +72,27 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className="">
+      <body className="h-screen">
         <ParticlesAnim />
-        <main
-          className={`${geistMono.variable} antialiased border-gray-500 border-2 h-screen m-8 p-4`}
-        >
-          {children}
-        </main>
-        <Footer />
+        <div className="min-h-full flex flex-col">
+          <main
+            className={`${geistMono.variable} antialiased border-gray-500 border-1 flex-1 relative m-8 p-4  flex flex-col justify-between gap-8`}
+          >
+            <div className="flex gap-24 justify-between">
+              <div className="flex-1">{children}</div>
+
+              <div className="flex flex-col items-end text-end">
+                <Nav />
+              </div>
+            </div>
+            <footer className="min-w-full">
+              <Footer />
+            </footer>
+            <div className="w-full flex items-center justify-center text-center">
+              <p className="text-center font-mono">© Halleluya Mulugeta</p>
+            </div>
+          </main>
+        </div>
       </body>
     </html>
   );
