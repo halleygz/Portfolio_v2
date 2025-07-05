@@ -10,7 +10,7 @@ const SkillsCard:React.FC<SkillCardProps> = ({
     <div className='border border-gray-800 overflow-hidden font-mono w-full p-4'>
       <h2 className="text-xl font-light">{setName}</h2>
       <div className="flex gap-2 flex-wrap">
-        {set.map((skill)=> (<Button>{skill}</Button>))}
+        {set.map((skill)=> (<Button key={skill}>{skill}</Button>))}
       </div>
     </div>
   )

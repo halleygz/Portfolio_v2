@@ -1,15 +1,10 @@
 import type { Metadata } from "next";
-import { Geist, Geist_Mono } from "next/font/google";
+import { Geist_Mono } from "next/font/google";
 import "./globals.css";
 import Footer from "@/components/Shared/Footer";
 import ParticlesAnim from "@/components/Animation/ParticlesAnim";
-import Nav from "@/components/Shared/Nav";
-import Typewriter from "@/components/Animation/Typewriter";
+import { Nav, NavSm } from "@/components/Shared/Nav";
 
-const geistSans = Geist({
-  variable: "--font-geist-sans",
-  subsets: ["latin"],
-});
 
 const geistMono = Geist_Mono({
   variable: "--font-geist-mono",
@@ -81,9 +76,13 @@ export default function RootLayout({
             <div className="flex gap-24 justify-between">
               <div className="flex-1">{children}</div>
 
-              <div className="flex flex-col items-end text-end">
+              <div className="hidden lg:flex flex-col items-end text-end">
                 <Nav />
               </div>
+            </div>
+
+            <div className="flex lg:hidden">
+              <NavSm />
             </div>
             <footer className="min-w-full">
               <Footer />

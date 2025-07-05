@@ -3,9 +3,7 @@ import React from "react";
 
 const TimelineDot: React.FC<TimelineDotProps> = ({
   isCurrent,
-  size,
   isLatest,
-  className,
 }) => {
   if (isLatest || isCurrent) {
     return (

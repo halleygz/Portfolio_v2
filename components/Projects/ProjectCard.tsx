@@ -13,6 +13,7 @@ const ProjectCard:React.FC<ProjectCardProps> = ({
       <div className="p-4">
         <h3 className="font-semibold text-lg">{title}</h3>
         <p className="">{description}</p>
+        <div className='hidden'>{technologies} {link}</div>
       </div>
     </div>
   )

@@ -11,6 +11,7 @@ const ProjectList: React.FC<ProjectListProps> = ({ projectLists }) => {
           technologies={project.technologies}
           imageUrl={project.imageUrl}
           link={project.link}
+          key={project.title}
         />
       ))}
     </div>

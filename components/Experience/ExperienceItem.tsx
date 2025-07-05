@@ -21,6 +21,7 @@ const ExperienceItem: React.FC<ExperienceItemsProps> = ({
       <div className="ml-4 mb-8">
         <h3 className="font-semibold text-lg">{title}</h3>
         <p>{description}</p>
+        <div className="hidden">{duration} {skills}</div>
       </div>
     </div>
   );
