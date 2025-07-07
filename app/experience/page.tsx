@@ -11,7 +11,7 @@ export default function Experience() {
     },
     {
       title: "Senior Frontend at XYZ",
-      description: "Led UI redesign...",
+      description: "Led UI redesign soidfj klasdjfkl asdjfalksd fjalksdfjal dkjfaskld fjaklsdjfalksdfj alskdjf alksdjfal skdjflaks djf...",
       duration: "Apr-June",
     },
     {
@@ -23,7 +23,7 @@ export default function Experience() {
   ];
   return (
     <div>
-      <header>
+      <header className="mb-10 sm:mb-12 lg:mb-16">
         <Heading content="Experience" />
       </header>
       <div>

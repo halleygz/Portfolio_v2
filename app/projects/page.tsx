@@ -28,7 +28,7 @@ export default function Projects() {
   ];
   return (
     <div>
-      <header>
+      <header className="mb-6 sm:mb-8 lg:mb-12">
         <Heading content="Projects" />
       </header>
       <ProjectList projectLists={projects}/>

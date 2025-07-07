@@ -19,7 +19,7 @@ export default function Skills() {
   ]
   return (
     <div>
-      <header>
+      <header className="mb-4 sm:mb-6 lg:mb-8">
         <Heading content="Skills"/>
       </header>
       <SkillsList skills={skills}/>

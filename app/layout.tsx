@@ -87,9 +87,6 @@ export default function RootLayout({
             <footer className="min-w-full">
               <Footer />
             </footer>
-            <div className="w-full flex items-center justify-center text-center">
-              <p className="text-center font-mono">© Halleluya Mulugeta</p>
-            </div>
           </main>
         </div>
       </body>

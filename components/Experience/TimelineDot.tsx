@@ -7,7 +7,7 @@ const TimelineDot: React.FC<TimelineDotProps> = ({
 }) => {
   if (isLatest || isCurrent) {
     return (
-      <div className={`bg-transparent border-7 border-black rounded-full w-6 h-6 flex items-center justify-center align-middle ${isCurrent && "animate-bounce"}`}></div>
+      <div className={`bg-white  border-7 border-black rounded-full w-6 h-6 flex items-center justify-center align-middle ${isCurrent && "animate-bounce"}`}></div>
     );
   } else {
     return <div className="bg-black rounded-full w-6 h-6"></div>;

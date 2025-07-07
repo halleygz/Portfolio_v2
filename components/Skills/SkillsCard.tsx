@@ -8,7 +8,7 @@ const SkillsCard:React.FC<SkillCardProps> = ({
 }) => {
   return (
     <div className='border border-gray-800 overflow-hidden font-mono w-full p-4'>
-      <h2 className="text-xl font-light">{setName}</h2>
+      <h2 className="font-semibold text-xl lg:text-2xl mb-4">{setName}</h2>
       <div className="flex gap-2 flex-wrap">
         {set.map((skill)=> (<Button key={skill}>{skill}</Button>))}
       </div>
