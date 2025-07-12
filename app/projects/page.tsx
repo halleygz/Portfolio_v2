@@ -5,25 +5,40 @@ import { ProjectCardProps } from "@/types/ComponentProps";
 export default function Projects() {
   const projects: ProjectCardProps[] = [
     {
-      title: "My Portfolio",
-      description: "A sleek portfolio built with Next.js.",
-      imageUrl: "/globe.png",
-      technologies: ["JavaScript"],
-      link: "googa"
-    },
-    {
-      title: "E-commerce App",
-      description: "Full-stack store with Stripe integration.",
-      imageUrl: "/globe.png",
-      technologies: ["JavaScript"],
-      link: "googa"
-    },
-    {
       title: "Minigit",
-      description: "Full-stack store with Stripe integration.",
+      description:
+        "Lightweight git like CLI tool. Includes features like commit, track and add files, view commit logs, branch management",
       imageUrl: "/globe.png",
-      technologies: ["JavaScript"],
-      link: "googa"
+      technologies: ["C++"],
+      link: ["https://github.com/halleygz/minigit"],
+    },
+    {
+      title: "Edu-Pulse",
+      description: "An ai powered adaptive learning platform",
+      imageUrl: "/globe.png",
+      technologies: [
+        "TypeScript",
+        "ExpressJS",
+        "MongoDB",
+        "NextJS",
+        "Gemni",
+        "Python",
+      ],
+      link: ["https://github.com/halleygz/edu-pulse"],
+    },
+    {
+      title: "Blogaa",
+      description: "Full stack blogging application with markdown support",
+      imageUrl: "/globe.png",
+      technologies: ["ReactJS", "JavaScript", "MongoDB"],
+      link: ["https://github.com/halleygz/blog-v3", "https://vercel.com"],
+    },
+    {
+      title: "Fusion Ai",
+      description: "Interactive  PDF document reader with ai assitant.",
+      imageUrl: "/globe.png",
+      technologies: ["NextJs", "TypeScript", "MongoDB", "Gemini"],
+      link: ["https://github.com/halleygz/blog-v3",],
     },
   ];
   return (
@@ -31,7 +46,7 @@ export default function Projects() {
       <header className="mb-6 sm:mb-8 lg:mb-12">
         <Heading content="Projects" />
       </header>
-      <ProjectList projectLists={projects}/>
+      <ProjectList projectLists={projects} />
     </div>
   );
 }

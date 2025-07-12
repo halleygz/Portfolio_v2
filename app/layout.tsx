@@ -5,7 +5,6 @@ import Footer from "@/components/Shared/Footer";
 import ParticlesAnim from "@/components/Animation/ParticlesAnim";
 import { Nav, NavSm } from "@/components/Shared/Nav";
 
-
 const geistMono = Geist_Mono({
   variable: "--font-geist-mono",
   subsets: ["latin"],

@@ -5,12 +5,12 @@ import { SkillCardProps } from "@/types/ComponentProps";
 export default function Skills() {
   const skills:SkillCardProps[] = [
     {
-      setName: "Languages",
-      set: [ "JavaScript", "TypeScript", "Python", "C++", "Go", "HTML", "CSS","SQL"]
+      setName: "Languages and Tools",
+      set: ["JavaScript", "TypeScript", "Python", "C++", "Bash", "SQL", "Matplotlib", "Pandas", "Github Actions", "Docker", "HTML", "CSS"]
     },
     {
-      setName: "Front end",
-      set: ["ReactJS", "Tailwindcss"]
+      setName: "Front end and Design",
+      set: ["NextJS", "Tailwindcss", "Figma"]
     },
     {
       setName: "Back end",

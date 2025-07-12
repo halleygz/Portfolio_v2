@@ -22,7 +22,6 @@ interface ExperienceItemsProps {
   title: string;
   description: string;
   isCurrent?: boolean;
-  skills?: string[];
   duration: string;
   isLatest?: boolean;
 }
@@ -42,7 +41,7 @@ interface ProjectCardProps {
   title: string;
   description: string;
   imageUrl: string;
-  link?: string;
+  link: string[];
   technologies: string[];
 }
 

@@ -5,20 +5,20 @@ import { ExperienceItemsProps } from "@/types/ComponentProps";
 export default function Experience() {
   const exps: ExperienceItemsProps[] = [
     {
-      title: "Frontend Developer at ABC",
-      description: "Built React components...",
-      duration: "Apr-June",
+      title: "Tech lead | Curriclulum Designer at DJ IT Club",
+      description: "Designed programming course curriculums, developed personalized learning platforms for schools",
+      duration: "Sept 2022 - Jan 2024",
     },
     {
-      title: "Senior Frontend at XYZ",
-      description: "Led UI redesign soidfj klasdjfkl asdjfalksd fjalksdfjal dkjfaskld fjaklsdjfalksdfj alskdjf alksdjfal skdjflaks djf...",
-      duration: "Apr-June",
+      title: "Tech lead at Brighter Generation",
+      description: "Developed data management systems for hospitals",
+      duration: "Dec 2022 - April 2023",
     },
     {
-      title: "Tech Lead at Awesome Co.",
-      description: "Currently leading...",
-      isCurrent: true,
-      duration: "Apr-June",
+      title: "Fullstack Developer at Tison.io",
+      description: "Worked with different teams and developed MVPs for 3 startups, delivering projects to enter their seeding fund round.",
+      duration: "Sept 2023 - April 2024",
+      isLatest: true,
     },
   ];
   return (

@@ -17,7 +17,6 @@ const ExperienceTimeline: React.FC<ExperienceProps> = ({ experiences }) => {
             duration={exp.duration}
             isCurrent={exp.isCurrent}
             isLatest={exp.isLatest}
-            skills={exp.skills}
             key={exp.title}
           />
         ))}

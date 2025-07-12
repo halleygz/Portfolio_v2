@@ -6,7 +6,6 @@ const ExperienceItem: React.FC<ExperienceItemsProps> = ({
   description,
   isCurrent,
   duration,
-  skills,
   isLatest,
 }) => {
   return (
@@ -20,10 +19,10 @@ const ExperienceItem: React.FC<ExperienceItemsProps> = ({
       </div>
 
       <div className="ml-4 mb-8">
-        <h3 className="font-semibold text-xl lg:font-light lg:text-4xl">{title}</h3>
+        <h3 className="font-semibold text-xl lg:font-normal lg:text-2xl">{title}</h3>
         <p>{description}</p>
-        <div className="hidden">
-          {duration} {skills}
+        <div className="">
+          <p className="font-bold">{duration}</p>
         </div>
       </div>
     </div>
