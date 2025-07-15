@@ -15,28 +15,28 @@ const Footer = () => {
         <h1 className="text-3xl lg:text-7xl font-thin mb-4">Available on</h1>
         <div className="flex flex-wrap justify-bewteen gap-4 w-full">
           <Link href={"mailto:halleluya.mulugeta@gmail.com"} className="cursor-pointer">
-            <Button className="flex justify-center items-center align-middle gap-1">
+            <Button className="flex justify-center items-center align-middle gap-1 cursor-pointer">
               <FaEnvelope size={20} style={{ verticalAlign: "middle" }} />
               <span className="hidden sm:inline">Mail</span>
             </Button>
           </Link>
 
           <Link href={"https://linkedin.com/in/halleluya-mulugeta"} target="blank" className="cursor-pointer">
-            <Button className="flex justify-center items-center align-middle gap-1">
+            <Button className="flex justify-center items-center align-middle gap-1 cursor-pointer">
               <FaLinkedin size={20} style={{ verticalAlign: "middle" }} />
               <span className="hidden sm:inline">LinkedIn</span>
             </Button>
           </Link>
 
           <Link href={"https://t.me/halle_mulugeta"} target="blank" className="cursor-pointer">
-            <Button className="flex justify-center items-center align-middle gap-1">
+            <Button className="flex justify-center items-center align-middle gap-1 cursor-pointer">
               <FaTelegram size={20} style={{ verticalAlign: "middle" }} />
               <span className="hidden sm:inline">Telegram</span>
             </Button>
           </Link>
 
           <Link href={"https://github.com/halleygz"} target="blank" className="cursor-pointer">
-            <Button className="hidden lg:flex justify-center items-center align-middle gap-1">
+            <Button className="hidden lg:flex justify-center items-center align-middle gap-1 cursor-pointer">
               <FaGithub size={20} style={{ verticalAlign: "middle" }} />
               <span className="hidden sm:inline">Github</span>
             </Button>
