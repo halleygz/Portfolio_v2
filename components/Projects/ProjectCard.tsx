@@ -1,7 +1,9 @@
+"use client";
 import { ProjectCardProps } from "@/types/ComponentProps";
 import Button from "../Shared/Button";
 import Link from "next/link";
 import { FaGithub, FaGlobe } from "react-icons/fa6";
+import { useTheme } from "next-themes";
 
 const ProjectCard: React.FC<ProjectCardProps> = ({
   title,
@@ -10,8 +12,13 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
   technologies,
   link,
 }) => {
+  const { theme } = useTheme();
   return (
-    <div className="flex flex-col gap-4 justify-between border border-gray-800 overflow-hidden hover:translate-x-1 hover:-translate-y-1 transition-all font-mono">
+    <div
+      className={`flex flex-col gap-4 justify-between border  ${
+        theme === "light" ? "border-gray-800" : "border-gray-400"
+      } overflow-hidden hover:translate-x-1 hover:-translate-y-1 transition-all font-mono`}
+    >
       <div className="hidden">
         <img src={imageUrl} alt={title} className="w-full h-54 object-cover" />
       </div>

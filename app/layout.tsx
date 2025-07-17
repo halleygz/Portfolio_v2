@@ -4,6 +4,8 @@ import "./globals.css";
 import Footer from "@/components/Shared/Footer";
 import ParticlesAnim from "@/components/Animation/ParticlesAnim";
 import { Nav, NavSm } from "@/components/Shared/Nav";
+import { ThemeProvider } from "@/components/theme-provider";
+import { ModeToggle } from "@/components/Shared/ModeToggle";
 
 const geistMono = Geist_Mono({
   variable: "--font-geist-mono",
@@ -65,29 +67,38 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
-      <body className="h-screen">
-        <ParticlesAnim />
-        <div className="min-h-full flex flex-col">
-          <main
-            className={`${geistMono.variable} antialiased border-gray-500 border-1 flex-1 relative m-8 p-4  flex flex-col justify-between gap-8`}
-          >
-            <div className="flex gap-24 justify-between">
-              <div className="flex-1">{children}</div>
+    <html lang="en" suppressHydrationWarning>
+      <body className={`h-screen`}>
+        <ThemeProvider
+          attribute="class"
+          defaultTheme="system"
+          enableColorScheme
+          enableSystem
+          disableTransitionOnChange
+        >
+          <ParticlesAnim />
+          <ModeToggle />
+          <div className="min-h-full flex flex-col">
+            <main
+              className={`${geistMono.variable} antialiased border-gray-500 border-1 flex-1 relative m-8 p-4  flex flex-col justify-between gap-8`}
+            >
+              <div className="flex gap-24 justify-between">
+                <div className="flex-1">{children}</div>
 
-              <div className="hidden lg:flex flex-col items-end text-end">
-                <Nav />
+                <div className="hidden lg:flex flex-col items-end text-end">
+                  <Nav />
+                </div>
               </div>
-            </div>
 
-            <div className="flex lg:hidden">
-              <NavSm />
-            </div>
-            <footer className="min-w-full">
-              <Footer />
-            </footer>
-          </main>
-        </div>
+              <div className="flex lg:hidden">
+                <NavSm />
+              </div>
+              <footer className="min-w-full">
+                <Footer />
+              </footer>
+            </main>
+          </div>
+        </ThemeProvider>
       </body>
     </html>
   );
