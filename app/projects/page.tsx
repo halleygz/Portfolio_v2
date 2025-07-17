@@ -18,8 +18,8 @@ export default function Projects() {
       imageUrl: "/globe.png",
       technologies: [
         "TypeScript",
-        "ExpressJS",
         "MongoDB",
+        "ExpressJS",
         "NextJS",
         "Gemni",
         "Python",

@@ -6,7 +6,7 @@ export default function Skills() {
   const skills:SkillCardProps[] = [
     {
       setName: "Languages and Tools",
-      set: ["JavaScript", "TypeScript", "Python", "C++", "Bash", "SQL", "Matplotlib", "Pandas", "Github Actions", "Docker", "HTML", "CSS"]
+      set: ["JavaScript", "Python", "TypeScript", "C++", "Bash", "SQL", "Matplotlib", "Pandas", "Github Actions", "Docker", "HTML", "CSS"]
     },
     {
       setName: "Front end and Design",
