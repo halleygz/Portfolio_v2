@@ -28,7 +28,7 @@ const Footer = () => {
             </Button>
           </Link>
 
-          <Link href={"https://t.me/halle_mulugeta"} target="blank" className="cursor-pointer">
+          <Link href={"https://t.me/hallemulugeta"} target="blank" className="cursor-pointer">
             <Button className="flex justify-center items-center align-middle gap-1 cursor-pointer">
               <FaTelegram size={20} style={{ verticalAlign: "middle" }} />
               <span className="hidden sm:inline">Telegram</span>
